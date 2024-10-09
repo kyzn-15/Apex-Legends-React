@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: rgb(218, 41, 42);
+    --primary-dark: rgb(166, 31, 32);
+    --bg: rgb(101, 74, 36);
+    --broken-white: rgb(255, 247, 236);
+    --gray: rgb(37, 37, 37);
+    --dark-gray: rgb(30, 29, 29);
+    --strong-red: rgb(254, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav.navbar{
+  background-color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  height: 75px;
+}
+
+a.nav-link{
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.over{
+  width: 8rem;
+}
+
+.navbar-collapse.show, .container-fluid{
+  background-color: black;
+}
+
+a.nav-link:hover{
+  color: var(--primary);
+}
+
+ul.dropdown-menu{
+  background-color: var(--primary);
+  border: 2px solid black;
+}
+
+ul.dropdown-menu li a.dropdown-item{
+  color: white;
+  font-size: 1.2rem;
+}
+
+ul.dropdown-menu li a.dropdown-item:hover{
+  background-color: black;
+  color: var(--primary);
+}
+
+span.navbar-toggler-icon{
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+a.button-download{
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--primary);
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.2rem;
+  margin: 0 40vw;
+}
+
+a.button-download:hover{
+  background-color: var(--primary-dark);
+}
+
+.teks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+}
+
+.teks h1{
+    /* font-family: 'Poppins'; */
+    color: white;
+    font-size: 10rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.teks h2{
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.banner video{
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+a.button-banner{
+    width: 20vw;
+    height: 8vh;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+a.button-banner:hover{
+    background-color: black;
+    color: var(--primary);
+    scale: 1.05;
+    animation: button-hover 0.2s linear;
+}
+
+@keyframes button-hover {
+    0%{
+        scale: 1;
+        background-color: var(--primary);
+        color: white;
+    }
+
+    100%{
+        scale: 1.05;
+        color: var(--primary);
+        background-color: black;
+    }
+}
+
+section.flyer{
+    margin-top: -0.5rem;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./assets/Apex\ Legends\ Wallpaper\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.flyer h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 10px 0px 10px black;
+}
+
+section.flyer p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 10px 0px 10px black;
+}
+
+section.news-overview{
+  background-color: var(--broken-white);
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: -0.5rem;
+}
+
+.card-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#news{
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.preview{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  color: white;
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+}
+
+#news-card{
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+
+.gambar{
+  width: 30vw;
+  height: 30vh;
+  background-color: gray;
+  background-image: url(../src/assets/news-1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  width: 30vw;
+}
+
+.date h5{
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+#game-name{
+  color: var(--primary);
+}
+
+.preview p{
+  margin-bottom: 19vh;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.strip{
+  width: 30vw;
+  height: 1vh;
+  background-color: var(--primary);
+}
+
+.card-about{
+  display: flex;
+  background-color: var(--dark-gray);
+  width: 90vw;
+  margin-bottom: 1.5rem;
+}
+
+.card-about-img{
+  background-color: red;
+  width: 70vw;
+  height: 25rem;
+  margin-right: 2rem;
+  background-image: url(../src/assets/about.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width:90vw;
+}
+
+.desc h1 {
+  font-size: 4.5rem;
+}
+
+.desc p {
+  font-size: 1.5rem;
+  max-width: 40vw;
+  text-wrap: wrap;
+  text-align: justify;
+}
+
+.about-foto{
+  margin-top: 2rem;
+  --size: 45rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(../src/assets/about-legends.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h5.about-heading{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size:3rem;
+}
+
+p.about-text{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.genap{
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+section.invisible-card{
+  padding-top: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--broken-white);
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.inv-card{
+  max-width: 30vw;
+}
+
+.inv-card img {
+  width: 30vw;
+  height: 35vh;
+}
+
+.inv-card h1{
+  margin-top: 1.5rem;
+  margin-left: 5%;
+}
+
+.inv-card p {
+  margin-left: 5%;
+  text-align: justify;
+  width: 25vw;
+  font-size: 1.2rem;
+}
+
+section.news-banner{
+  width: 100vw;
+  background-color: var(--strong-red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:30rem;
+  margin-top: 4rem;
+}
+
+section.news-banner h1 {
+  margin-top: -10rem;
+  color: white;
+  font-size: 3rem;
+}
+
+section.news-container{
+  width: 100vw;
+  background-color: var(--broken-white);
+  padding: 2rem 0;
+}
+
+/* footer */
+
+footer{
+  width: 100vw;
+  /* height: 40vh; */
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+}
+
+.footer-wrap{
+  width: 80vw;
+  margin-top: 5rem;
+}
+
+.footer-top {
+  display: flex;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.footer-top a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-top a:hover{
+  color: var(--primary);
+}
+
+.line{
+  width: 80vw;
+  height: 2px;
+  background-color: gray;
+  border-radius: 1rem;
+  margin-top:2rem;
+}
+
+.footer-img-wrap{
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-img-wrap .apex-logo{
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(../src/assets/apex-logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-img-wrap .teen{
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(../src/assets/Teen.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 404 */
+.not-found{
+  height: 100vh;
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100pt;
+  text-align: center;
+}
+
+
+
+/* Rensponsive */
+@media (max-width: 1200px) {
+  .over{
+    width: auto;
+  }
+  html {
+      font-size: 75%;
+  }
+
+  body{
+    max-width: 100vw;
+  }
+
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  a.button-download{
+    margin: 0;
+    margin-left: 30vw;
+  }
+
+  .navbar-collapse.show, .container-fluid{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  a.button-banner{
+    font-size: 2.2rem;
+    width: 30vw;
+  }
+
+  section.flyer h1 {
+    font-size: 5rem;
+  }
+
+  section.flyer p{
+    font-size: 3rem;
+    width: 70vw;
+  }
+
+  #flyer{
+    font-size: 4rem;
+  }
+
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .preview{
+    width: 45vw;
+    margin: 0;
+    height: 50vh;
+  }
+
+  .gambar{
+    width: 45vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .strip{
+    width: 45vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2{
+    font-size: 3rem;
+  }
+
+  .preview p{
+    font-size: 2rem;
+    width: 40vw;
+  }
+
+
+    
+}
+
+@media (max-width: 800px){
+  .preview .gambar{
+    min-height: 20vh;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 65%;
+  }
+
+  body{
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  a.button-download{
+    margin: 0 auto;
+    width: 31vw;
+    height: 5vh;
+    margin: 1.5rem 0;
+  }
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  ul.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  .button-wrap{
+    flex-direction: column;
+  }
+
+  .button-wrap a.button-banner {
+    width: 80vw;
+    font-size: 2.5rem;
+  }
+
+  section.flyer h1{
+    font-size: 4rem;
+    width: 80vw;
+    text-align: center;
+  }
+
+  section.flyer p{
+    width: 70vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  #flyer{
+    width: 80vw;
+    font-size: 3rem;
+  }
+
+  section.news-overview{
+    padding: 2rem 0;
+  }
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-direction: column;
+  }
+
+  .preview{
+    width: 85vw;
+    margin: 0;
+  }
+
+  .preview .gambar{
+    width: 85vw;
+    min-height: 25vh;
+    background-size: contain;
+    background-color: black;
+  }
+
+  .date{
+    width: 85vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2 {
+    font-size: 3rem;
+  }
+
+  .preview p {
+    font-size: 2rem;
+  }
+
+  .strip{
+    width: 85vw;
+  }
+
+  /* about */
+  .card-about{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-about-img{
+    width: 90vw;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  div.desc p {
+    max-width: 80vw;
+    font-size: 1.5rem;
+  }
+
+  .desc h1{
+    text-align: center;
+  }
+
+  .desc a.button-banner{
+    width: 60vw;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  div.about-foto{
+    width: 90vw;
+  }
+
+  p.about-text {
+    width: 85vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  section.invisible-card{
+    flex-direction: column;
+  }
+
+  .inv-card{
+    max-width: none;
+    width: 100vw;
+  }
+
+  .inv-card img {
+    max-width: none;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .inv-card h1{
+    font-size: 2.8rem;
+  }
+
+  .inv-card p{
+    max-width: none;
+    width: 85vw;
+    font-size: 1.5rem;
+  }
+
+  /* neews */
+  #news-card p{
+    text-align: justify;
+    max-width: none;
+    width: 70vw;
+  }
+
+  #news-card{
+    height: 60vh;
+  }
+
+
+  .footer-top{
+    flex-wrap: wrap;
+  }
+
+
+
+}
+  
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
+
+  body{
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  li.nav-item{
+    margin-bottom: 1.5rem;
+  }
+
+  a.button-download{
+    margin: 0 auto;
+    width: 31vw;
+    height: 5vh;
+    /* margin: 1.5rem 0; */
+  }
+
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  .button-wrap{
+    flex-direction: column;
+  }
+
+  .button-wrap a.button-banner {
+    width: 80vw;
+    font-size: 2.5rem;
+  }
+
+  section.flyer h1{
+    font-size: 4rem;
+    width: 80vw;
+    text-align: center;
+  }
+
+  section.flyer p{
+    width: 70vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  #flyer{
+    width: 80vw;
+    font-size: 3rem;
+  }
+
+  section.news-overview{
+    padding: 2rem 0;
+  }
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-direction: column;
+  }
+
+  .preview{
+    width: 85vw;
+    margin: 0;
+  }
+
+  .preview .gambar{
+    width: 85vw;
+  }
+
+  .date{
+    width: 85vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2 {
+    font-size: 3rem;
+  }
+
+  .preview p {
+    font-size: 2rem;
+  }
+
+  .strip{
+    width: 85vw;
+  }
+
+
+  .footer-top{
+    flex-wrap: wrap;
+  }
+
+  .not-found{
+    font-size: 50pt;
+    height: 85vh;
+  }
+}
