@@ -6,7 +6,10 @@ import Footer from "./Footer";
 import Head from "./Head";
 import '../../src/index.css';
 import '../../src/blogs.css';
-import GampeplayVidio from '../assets/boodhound.mp4'; // Make sure the path is correct.
+import GampeplayVidio from '../assets/boodhound.mp4'; 
+import Card1 from '../assets/card1.jpg'
+import Card2 from '../assets/card2.jpg'
+import Card3 from '../assets/card3.jpg'
 
 const AppStyles = {
   root: {
@@ -356,21 +359,21 @@ function About() {
 
       <section className="invisible-card" style={AppStyles.invisibleCard}>
         <div className="inv-card" style={AppStyles.invCard}>
-            <img src="/assets/card1.jpg" alt="Card 1" style={AppStyles.invCardImg} />
+            <img src={Card1} alt="Card 1" style={AppStyles.invCardImg} />
             <h1 style={AppStyles.invCardH1}>Strategic Squad Play</h1>
             <p style={AppStyles.invCardP}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia est enim quibusdam similique veniam. Impedit ea aliquam corporis hic laboriosam excepturi. Omnis autem consequatur veritatis nihil modi minus dolore voluptate?
             </p>
         </div>
         <div className="inv-card" style={AppStyles.invCard}>
-            <img src="/assets/card2.jpg" alt="Card 2" style={AppStyles.invCardImg} />
+            <img src={Card2} alt="Card 2" style={AppStyles.invCardImg} />
             <h1 style={AppStyles.invCardH1}>Strategic Squad Play</h1>
             <p style={AppStyles.invCardP}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia est enim quibusdam similique veniam. Impedit ea aliquam corporis hic laboriosam excepturi. Omnis autem consequatur veritatis nihil modi minus dolore voluptate?
             </p>
         </div>
         <div className="inv-card" style={AppStyles.invCard}>
-            <img src="/assets/card3.jpg" alt="Card 3" style={AppStyles.invCardImg} />
+            <img src={Card3} alt="Card 3" style={AppStyles.invCardImg} />
             <h1 style={AppStyles.invCardH1}>Strategic Squad Play</h1>
             <p style={AppStyles.invCardP}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia est enim quibusdam similique veniam. Impedit ea aliquam corporis hic laboriosam excepturi. Omnis autem consequatur veritatis nihil modi minus dolore voluptate?
